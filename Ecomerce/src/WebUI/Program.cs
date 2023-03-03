@@ -14,6 +14,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseMigrationsEndPoint();
+    app.UseSwaggerUi3();
 
     // Initialise and seed database
     using (var scope = app.Services.CreateScope())
